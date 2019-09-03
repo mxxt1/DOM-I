@@ -56,7 +56,7 @@ navItems[5].textContent = siteContent.nav["nav-item-6"];
 //Hero
 let ctaText = document.querySelector('.cta-text');
 console.log(ctaText);
-ctaText.children[0].textContent = siteContent.cta["h1"];
+ctaText.children[0].textContent = siteContent.cta["h1"]; //TODO: how to add <br> into h1 string
 ctaText.children[1].textContent = siteContent.cta["button"];
 
 let ctaImg = document.getElementById('cta-img');
