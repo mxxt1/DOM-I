@@ -52,14 +52,13 @@ navItems[3].textContent = siteContent.nav["nav-item-4"];
 navItems[4].textContent = siteContent.nav["nav-item-5"];
 navItems[5].textContent = siteContent.nav["nav-item-6"];
 
+//turn nav links green
+navItems.forEach(x =>{
+  x.style.color = "green";
+});
 
-//there has to be a better way to do this.
-navItems[0].style.color = "green";
-navItems[1].style.color = "green";
-navItems[2].style.color = "green";
-navItems[3].style.color = "green";
-navItems[4].style.color = "green";
-navItems[5].style.color = "green";
+
+
 
 
 //Hero
