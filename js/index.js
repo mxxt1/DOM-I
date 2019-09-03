@@ -43,6 +43,15 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+
+let nav = document.querySelector("nav");
+
+
+let newLink1 = document.createElement("a");
+newLink1.innerText = "newLink1";
+nav.appendChild(newLink1);
+
+
 let navItems = document.querySelectorAll('a');
 console.log(navItems);
 navItems[0].textContent = siteContent.nav["nav-item-1"];
@@ -51,14 +60,15 @@ navItems[2].textContent = siteContent.nav["nav-item-3"];
 navItems[3].textContent = siteContent.nav["nav-item-4"];
 navItems[4].textContent = siteContent.nav["nav-item-5"];
 navItems[5].textContent = siteContent.nav["nav-item-6"];
-
-//Prepend and Append
-
-let nav = document.querySelector("nav");
-
-let newLink1 = document.createElement("a");
-newLink1.innerText = "newLink1";
-nav.appendChild(newLink1);
+// navItems[0].textContent = siteContent["nav"][0];
+// console.log(siteContent["nav"][0]);
+// console.log(nav[0]);
+// navItems.forEach(x => {
+//   for (let i=0;i<navItems.length;i++){
+//   x.textContent = siteContent["nav"][i];
+//   console.log(siteContent["nav"][i]);
+//   };
+// })
 
 let newLink2 = document.createElement("a");
 newLink2.innerText = "newLink2";
@@ -70,11 +80,11 @@ navItems.forEach(x =>{
 });
 
 
-
 //Hero
 let ctaText = document.querySelector('.cta-text');
 console.log(ctaText);
-ctaText.children[0].textContent = siteContent.cta["h1"]; //TODO: how to add <br> into h1 string
+// ctaText.children[0].textContent = siteContent.cta["h1"]; //TODO: how to add <br> into h1 string
+ctaText.children[0].innerHTML = "<h1>Dom<br>Is<br>Awesome";
 ctaText.children[1].textContent = siteContent.cta["button"];
 
 let ctaImg = document.getElementById('cta-img');
