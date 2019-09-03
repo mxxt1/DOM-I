@@ -52,12 +52,22 @@ navItems[3].textContent = siteContent.nav["nav-item-4"];
 navItems[4].textContent = siteContent.nav["nav-item-5"];
 navItems[5].textContent = siteContent.nav["nav-item-6"];
 
-//turn nav links green
+//Prepend and Append
+
+let nav = document.querySelector("nav");
+
+let newLink1 = document.createElement("a");
+newLink1.innerText = "newLink1";
+nav.appendChild(newLink1);
+
+let newLink2 = document.createElement("a");
+newLink2.innerText = "newLink2";
+nav.prepend(newLink2);
+
+//turn navlinks green
 navItems.forEach(x =>{
   x.style.color = "green";
 });
-
-
 
 
 
